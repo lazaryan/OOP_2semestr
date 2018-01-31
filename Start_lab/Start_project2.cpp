@@ -3,13 +3,12 @@
 using namespace System;
 using namespace System::IO;
 
-const int COUNT = 2;//Количество символов в шаблоне
-
+const int COUNT = 2;//РљРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РІ С€Р°Р±Р»РѕРЅРµ
 void check_pattern(String^ pattern);
 int check_pinches(String^ pinches , String^ pattern);
 
 int main(array<System::String ^> ^args) {  
-	Console::WriteLine(L"Введите шаблон: ");
+	Console::WriteLine(L"Р’РІРµРґРёС‚Рµ С€Р°Р±Р»РѕРЅ: ");
 	String^ pattern = Console::ReadLine();
 	check_pattern(pattern);
 
@@ -31,13 +30,13 @@ void check_pattern(String^ pattern) {
 	int length = pattern->Length;
 
 	while (length != COUNT) {
-		Console::WriteLine(L"Ошибка ввода. Повторите попытку: ");
+		Console::WriteLine(L"РћС€РёР±РєР° РІРІРѕРґР°. РџРѕРІС‚РѕСЂРёС‚Рµ РїРѕРїС‹С‚РєСѓ: ");
 		pattern = Console::ReadLine();
 	}
 
 	for (int i = 0; i < length; i++) {
 		if (pattern[i] != '*' && !(pattern[i] >= '0' && pattern[i] <= '9')) {
-			Console::WriteLine(L"Ошибка ввода. Повторите попытку: ");
+			Console::WriteLine(L"РћС€РёР±РєР° РІРІРѕРґР°. РџРѕРІС‚РѕСЂРёС‚Рµ РїРѕРїС‹С‚РєСѓ: ");
 			pattern = Console::ReadLine();
 			check_pattern(pattern);
 			break;
