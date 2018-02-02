@@ -1,21 +1,18 @@
 #pragma once
 
+#include "FIle.h"
+
 using namespace System;
 using namespace System::IO;
 
-ref class search_pattern
+ref class search_pattern: FIle
 {
 public:
 	search_pattern();
 	void add_pattern();
 	void check_pattern();
-	void open_file();
-	void close_file();
-	void enter_pinches();
-	int check_pinches(String^ pinches, String^ pattern);
+	FIle file;
 private:
-	const int const COUNT = 2;
 	String ^ pattern;
-	StreamReader^ finp;
 };
 
