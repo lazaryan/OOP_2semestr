@@ -9,12 +9,13 @@ public:
 	Template();
 	Template(String^);
 
+	void AddCountSymboll(int);
 	void AddTemlate();
 	void OpenFile(String^);
 	void AddTemlates();
 	void CloseFile();
 private:
-	const int const COUNT = 3;
+	int COUNT;
 	String ^ temlate;
 	StreamReader ^ finp;
 

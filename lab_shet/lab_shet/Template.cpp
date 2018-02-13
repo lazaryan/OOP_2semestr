@@ -8,6 +8,8 @@ Template::Template(){}
 
 Template::Template(String^ file) {finp = gcnew StreamReader(file);}
 
+void Template::AddCountSymboll(int n) {COUNT = n;}
+
 void Template::AddTemlate() {
 	Console::WriteLine(L"Введите шаблон :");
 	String^ tm = Console::ReadLine();

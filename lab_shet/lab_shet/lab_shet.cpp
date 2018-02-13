@@ -10,6 +10,8 @@ int main(array<System::String ^> ^args)
 {
 	//Template^ tm = gcnew Template("Input.txt"); Было вместо OpenFile. Сложно отладить
 	Template^ tm = gcnew Template();//создаем класс с указаным файлом для чтения
+
+	tm->AddCountSymboll(3);//Сколько цифр в шаблоне
 	tm->AddTemlate();//Получаем шаблон(Проверка в отдельном методе под копотом)
 
 	tm->OpenFile("Input.txt");//открываем файл для чтения
