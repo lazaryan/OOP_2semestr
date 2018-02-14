@@ -4,7 +4,6 @@
 using namespace System;
 using namespace System::IO;
 
-//Функции главного файла
 int Choice();
 int ChoiceRepeat();
 int AddCount(int);

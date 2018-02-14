@@ -1,4 +1,4 @@
-#include "stdafx.h"
+ï»¿#include "stdafx.h"
 #include "Student.h"
 
 using namespace System;
@@ -10,7 +10,7 @@ void Student::SetName() {
 	String^ name = Console::ReadLine();
 
 	while (name->Length == 0 || !CheckName(name)) {
-		Console::WriteLine(L"Îøèáêà ââîäà. Íåêîğåêòíî ââåäåíû äàííût. Ïîâòîğèòå ïîïûòêó:");
+		Console::WriteLine(L"ĞÑˆĞ¸Ğ±ĞºĞ° Ğ²Ğ²Ğ¾Ğ´Ğ°. ĞĞµĞºĞ¾Ñ€ĞµĞºÑ‚Ğ½Ğ¾ Ğ²Ğ²ĞµĞ´ĞµĞ½Ñ‹ Ğ´Ğ°Ğ½Ğ½Ñ‹t. ĞŸĞ¾Ğ²Ñ‚Ğ¾Ñ€Ğ¸Ñ‚Ğµ Ğ¿Ğ¾Ğ¿Ñ‹Ñ‚ĞºÑƒ:");
 		name = Console::ReadLine();
 	}
 
@@ -21,7 +21,7 @@ void  Student::SetAge() {
 	String^ age = Console::ReadLine();
 
 	while (age->Length != 4 || !CheckAge(age)) {
-		Console::WriteLine(L"Îøèáêà ââîäà. Íåêîğåêòíî ââåäåíû äàííût. Ïîâòîğèòå ïîïûòêó:");
+		Console::WriteLine(L"ĞÑˆĞ¸Ğ±ĞºĞ° Ğ²Ğ²Ğ¾Ğ´Ğ°. ĞĞµĞºĞ¾Ñ€ĞµĞºÑ‚Ğ½Ğ¾ Ğ²Ğ²ĞµĞ´ĞµĞ½Ñ‹ Ğ´Ğ°Ğ½Ğ½Ñ‹t. ĞŸĞ¾Ğ²Ñ‚Ğ¾Ñ€Ğ¸Ñ‚Ğµ Ğ¿Ğ¾Ğ¿Ñ‹Ñ‚ĞºÑƒ:");
 		age = Console::ReadLine();
 	}
 
@@ -42,8 +42,8 @@ bool Student::CheckName(String^ st) {
 		if (!(
 			(st[i] >= 'a'  && st[i] <= 'z')  ||
 			(st[i] >= 'A'  && st[i] <= 'Z')  ||
-			(st[i] >= L'à' && st[i] <= L'ÿ') ||
-			(st[i] >= L'À' && st[i] <= L'ß') ||
+			(st[i] >= L'Ğ°' && st[i] <= L'Ñ') ||
+			(st[i] >= L'Ğ' && st[i] <= L'Ğ¯') ||
 			st[i] == ' '
 			)) return false;
 		if (st[i] == ' ') {

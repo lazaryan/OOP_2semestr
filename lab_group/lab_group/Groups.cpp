@@ -1,4 +1,4 @@
-#include "stdafx.h"
+ï»¿#include "stdafx.h"
 #include "Groups.h"
 #include "Student.h"
 
@@ -7,10 +7,10 @@ Groups::Groups() {gr = gcnew ArrayList();}
 void Groups::AddStudent() {
 	Student^ st = gcnew Student();
 
-	Console::WriteLine(L"Ââåäèòå èìÿ â ôîğìàòå: Ô È Î!");
+	Console::WriteLine(L"Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¸Ğ¼Ñ Ğ² Ñ„Ğ¾Ñ€Ğ¼Ğ°Ñ‚Ğµ: Ğ¤ Ğ˜ Ğ!");
 	st->SetName();
 
-	Console::WriteLine(L"Ââåäèòå ãîä ğîæäåíèÿ ñòóäåíòà ñòóäåíòà");
+	Console::WriteLine(L"Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ³Ğ¾Ğ´ Ñ€Ğ¾Ğ¶Ğ´ĞµĞ½Ğ¸Ñ ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğ° ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğ°");
 	st->SetAge();
 
 	gr->Add(st);

@@ -1,14 +1,14 @@
-#include "stdafx.h"
+ï»¿#include "stdafx.h"
 #include "Common.h"
 
 int Choice() {
 
-	Console::WriteLine(L"Ââåäèòå íîìåğ çàïğîñà");
-	Console::WriteLine(L"\t1)Äîáàâèòü ñòóäåíòà");
-	Console::WriteLine(L"\t2)Óäàëèòü ñòóäåíòà");
-	Console::WriteLine(L"\t3)Âûâîä êîëëè÷åñòâà ñòóäåíòîâ");
-	Console::WriteLine(L"\t4)Ïîèñê ñòóäåíòà ïî ôîìèëèè");
-	Console::WriteLine(L"\t5)Âûõîä");
+	Console::WriteLine(L"Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ¾Ğ¼ĞµÑ€ Ğ·Ğ°Ğ¿Ñ€Ğ¾ÑĞ°");
+	Console::WriteLine(L"\t1)Ğ”Ğ¾Ğ±Ğ°Ğ²Ğ¸Ñ‚ÑŒ ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğ°");
+	Console::WriteLine(L"\t2)Ğ£Ğ´Ğ°Ğ»Ğ¸Ñ‚ÑŒ ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğ°");
+	Console::WriteLine(L"\t3)Ğ’Ñ‹Ğ²Ğ¾Ğ´ ĞºĞ¾Ğ»Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ° ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğ¾Ğ²");
+	Console::WriteLine(L"\t4)ĞŸĞ¾Ğ¸ÑĞº ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğ° Ğ¿Ğ¾ Ñ„Ğ¾Ğ¼Ğ¸Ğ»Ğ¸Ğ¸");
+	Console::WriteLine(L"\t5)Ğ’Ñ‹Ñ…Ğ¾Ğ´");
 
 	return AddCount(5);
 
@@ -19,7 +19,7 @@ int AddCount(int n) {
 
 	while (num->Length != 1 ||
 		!(((int)num[0] - (int)'0') >= 1 && ((int)num[0] - (int)'0') <= n)) {
-		Console::WriteLine(L"Îøèáêà ââîäà íîìåğà. Ïîâòîğèòå ïîïûòêó:");
+		Console::WriteLine(L"ĞÑˆĞ¸Ğ±ĞºĞ° Ğ²Ğ²Ğ¾Ğ´Ğ° Ğ½Ğ¾Ğ¼ĞµÑ€Ğ°. ĞŸĞ¾Ğ²Ñ‚Ğ¾Ñ€Ğ¸Ñ‚Ğµ Ğ¿Ğ¾Ğ¿Ñ‹Ñ‚ĞºÑƒ:");
 		num = Console::ReadLine();
 	}
 
@@ -28,9 +28,9 @@ int AddCount(int n) {
 
 int ChoiceRepeat() {
 
-	Console::WriteLine(L"Ââåäèòå íîìåğ çàïğîñà:");
-	Console::WriteLine(L"\t1)Ñäåëàòü åùå îäèí çàïğîñ");
-	Console::WriteLine(L"\t2)Âûõîä");
+	Console::WriteLine(L"Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ¾Ğ¼ĞµÑ€ Ğ·Ğ°Ğ¿Ñ€Ğ¾ÑĞ°:");
+	Console::WriteLine(L"\t1)Ğ¡Ğ´ĞµĞ»Ğ°Ñ‚ÑŒ ĞµÑ‰Ğµ Ğ¾Ğ´Ğ¸Ğ½ Ğ·Ğ°Ğ¿Ñ€Ğ¾Ñ");
+	Console::WriteLine(L"\t2)Ğ’Ñ‹Ñ…Ğ¾Ğ´");
 
 	return AddCount(2);
 }
