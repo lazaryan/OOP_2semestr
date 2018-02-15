@@ -11,12 +11,13 @@ public:
 	String^ GetName();
 
 	void SetAge();
-	String^ GetAge();
+	int GetAge();
 private:
 	String^ Name;
-	String^ Age;
+	int Age;
 
 	bool CheckName(String^);
 	bool CheckAge(String^);
+	int AddNumber(String^);
 };
 

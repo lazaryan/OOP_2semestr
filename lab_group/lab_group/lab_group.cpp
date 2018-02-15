@@ -1,6 +1,7 @@
 ﻿// lab_group.cpp: главный файл проекта.
 
 #include "stdafx.h"
+#include <stdlib.h>
 
 #include "Common.h"//Функции для работы главной функции
 #include "Groups.h"
@@ -17,10 +18,20 @@ int main(array<System::String ^> ^args) {
 		case 1: 
 			gr->AddStudent();//добавляем студента
 			break;
+		case 2:
+			gr->RemoveStudent();//Удаляем студента
+			break;
+		case 3:
+			Console::WriteLine(gr->GetCountStudent());//Получаем количество студентов
+			break;
+		case 5:
+			exit(0);
 		default:
 			break;
 		}
-		n = ChoiceRepeat();
+
+		n = ChoiceRepeat();//будут ли еще запросы
+		system("cls");//очистка консоли
 	}
 
 	Console::ReadLine();

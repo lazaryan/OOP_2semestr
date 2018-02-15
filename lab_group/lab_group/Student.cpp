@@ -25,13 +25,12 @@ void  Student::SetAge() {
 		age = Console::ReadLine();
 	}
 
-	Age = age;
-
+	Age = AddNumber(age);
 }
 
 String^ Student::GetName() { return Name; }
 
-String^ Student::GetAge() { return Age; }
+int Student::GetAge() { return Age; }
 
 bool Student::CheckName(String^ st) {
 	int length = st->Length,
@@ -59,9 +58,19 @@ bool Student::CheckName(String^ st) {
 bool Student::CheckAge(String^ age) {
 	int length = age->Length;
 
-	for (int i = 0; i < length; i++) {
-		if (!(age[i] >= '0' && age[i] <= '9')) return false;
-	}
+	for (int i = 0; i < length; i++)
+		if (!(age[i] >= '0' && age[i] <= '9')) 
+			return false;
 
 	return true;
+}
+
+int Student::AddNumber(String^ s) {
+	int length = s->Length,
+		count = 0;
+
+	for (int i = 0; i < length; i++)
+		count = count * 10 + ((int)s[i] - (int)'0');
+
+	return count;
 }
