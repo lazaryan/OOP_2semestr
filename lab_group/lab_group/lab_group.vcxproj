@@ -143,6 +143,7 @@
     <ClInclude Include="Common.h" />
     <ClInclude Include="Groups.h" />
     <ClInclude Include="PrivateMethodGroups.h" />
+    <ClInclude Include="PrivateMethodStudent.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Student.h" />
@@ -156,6 +157,7 @@
     <ClCompile Include="Groups.cpp" />
     <ClCompile Include="lab_group.cpp" />
     <ClCompile Include="PrivateMethodGroups.cpp" />
+    <ClCompile Include="PrivateMethodStudent.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

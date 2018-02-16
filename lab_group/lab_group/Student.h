@@ -1,8 +1,10 @@
 #pragma once
 
+#include "PrivateMethodStudent.h"
+
 using namespace System;
 
-ref class Student
+ref class Student : PrivateMethodStudent
 {
 public:
 	Student();
@@ -15,9 +17,5 @@ public:
 private:
 	String^ Name;
 	int Age;
-
-	bool CheckName(String^);
-	bool CheckAge(String^);
-	int AddNumber(String^);
 };
 
