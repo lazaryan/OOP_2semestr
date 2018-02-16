@@ -7,10 +7,11 @@ int Choice() {
 	Console::WriteLine(L"\t1)Добавить студента");
 	Console::WriteLine(L"\t2)Удалить студента");
 	Console::WriteLine(L"\t3)Вывод колличества студентов");
-	Console::WriteLine(L"\t4)Поиск студента по фомилии");
-	Console::WriteLine(L"\t5)Выход");
+	Console::WriteLine(L"\t4)Поиск студента по номеру");
+	Console::WriteLine(L"\t5)Поиск студента по фамилии");
+	Console::WriteLine(L"\t6)Выход");
 
-	return AddCount(5);
+	return AddCount(6);
 
 }
 

@@ -11,7 +11,7 @@ using namespace System::IO;
 
 int main(array<System::String ^> ^args) {
 	Groups^ gr = gcnew Groups();//Создаем класс
-	
+	ArrayList ^ st = gcnew ArrayList();
 	int n = 1;
 	while (n == 1) {
 		switch (Choice()) {
@@ -24,7 +24,13 @@ int main(array<System::String ^> ^args) {
 		case 3:
 			Console::WriteLine(gr->GetCountStudent());//Получаем количество студентов
 			break;
+		case 4:
+			st->Add(gr->SearchStudentNum());//поиск по номеру
+			break;
 		case 5:
+			st->Add(gr->SearchStudentName());//поиск по фомилии
+			break;
+		case 6:
 			exit(0);
 		default:
 			break;
@@ -34,6 +40,5 @@ int main(array<System::String ^> ^args) {
 		system("cls");//очистка консоли
 	}
 
-	Console::ReadLine();
     return 0;
 }
