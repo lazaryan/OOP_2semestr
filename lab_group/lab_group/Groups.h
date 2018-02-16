@@ -1,9 +1,11 @@
 #pragma once
 
+#include "PrivateMethodGroups.h"
+
 using namespace System;
 using namespace System::Collections;
 
-ref class Groups
+ref class Groups :  PrivateMethodGroups
 {
 public:
 	Groups();
@@ -16,10 +18,5 @@ public:
 private:
 	ArrayList^ gr;
 	String^ number_group;
-
-	int GetNumber(String^);
-	bool CheckNumber(String^);
-	bool CheckName(String^);
-	bool Equality(String^, String^);
 };
 
