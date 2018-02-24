@@ -11,7 +11,7 @@ public:
 
 	void AddCountSymboll(int);
 	void AddTemlate();
-	void OpenFile(String^);
+	bool OpenFile(String^);
 	void AddTemlates();
 	void CloseFile();
 private:

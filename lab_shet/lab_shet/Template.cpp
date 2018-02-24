@@ -32,7 +32,17 @@ bool Template::CheckTemplate(String^ tm) {
 	return true;
 }
 
-void Template::OpenFile(String^ file) {finp = gcnew StreamReader(file);}
+bool Template::OpenFile(String^ file) {
+	try {
+		finp = gcnew StreamReader(file);
+	}
+	catch (...) {
+		Console::WriteLine(L"Файл не найден.");
+		return false;
+	}
+
+	return true;
+}
 
 void Template::CloseFile() {finp->Close();}
 
