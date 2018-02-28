@@ -10,9 +10,11 @@ using namespace System;
 using namespace System::IO;
 
 int main(array<System::String ^> ^args) {
-	Groups^ gr = gcnew Groups();//Создаем класс
+	Groups^		gr = gcnew Groups();//Создаем класс
 	ArrayList ^ st = gcnew ArrayList();
-	int n = 1;
+
+	gr->AddListStudents();//Получаем список всех студентов
+	/*int n = 1;
 	while (n == 1) {
 		switch (Choice()) {
 		case 1: 
@@ -38,7 +40,11 @@ int main(array<System::String ^> ^args) {
 
 		n = ChoiceRepeat();//будут ли еще запросы
 		system("cls");//очистка консоли
+	}*/
+	if (!gr->AddStudent()) {
+		Console::WriteLine("Error");
 	}
 
+	Console::ReadLine();
     return 0;
 }

@@ -3,18 +3,72 @@
 #include "Groups.h"
 #include "Student.h"
 
-Groups::Groups() {gr = gcnew ArrayList();}
+using namespace System;
+using namespace System::IO;
 
-void Groups::AddStudent() {
+Groups::Groups() {
+	gr = gcnew ArrayList();
+}
+
+bool Groups::AddListStudents() {
+	Student^ stud = gcnew Student();
+	StreamReader^ inp_r;
+	String  ^s,
+			^name;
+	int age;
+
+	try {
+		inp_r = gcnew StreamReader("Students.txt");
+	}
+	catch (...) {
+		StreamWriter ^ inp_w = gcnew StreamWriter("Students.txt");
+		inp_w->Close();
+		return false;
+	}
+
+	while (!inp_r->EndOfStream) {
+		int a;
+
+		s = inp_r->ReadLine();
+
+		try {
+			a = s->IndexOf(';');//Позиция точки с запятой
+		}
+		catch (...) {
+			continue;
+		}
+
+		if (CheckName(AddNameStudent(s, a)) && CheckNumber(AddAgeStudent(s, a))) {
+			name = AddNameStudent(s, a);
+			age = GetNumber(AddAgeStudent(s, a));
+
+			stud->SetName(name);
+			stud->SetAge(age);
+
+			gr->Add(stud);
+		}
+	}
+
+	return true;
+}
+
+bool Groups::AddStudent() {
 	Student^ st = gcnew Student();
 
-	Console::WriteLine(L"Введите имя в формате: Ф И О!");
-	st->SetName();
+	StreamWriter ^ inp;
+	StreamReader ^ out;
+	try {
+		out = gcnew StreamReader("files/AddStudents.txt");//Добавляемые студенты
+	}
+	catch (...) {
+		return false;
+	}
 
-	Console::WriteLine(L"Введите год рождения студента студента");
-	st->SetAge();
+	while (!out->EndOfStream) {
+		return true;
+	}
 
-	gr->Add(st);
+	return true;
 }
 
 void Groups::RemoveStudent() {
@@ -81,6 +135,6 @@ ArrayList^ Groups::SearchStudentName() {
 				st->Add(gr[i]);
 		}
 	}
-
 	return st;
 }
+

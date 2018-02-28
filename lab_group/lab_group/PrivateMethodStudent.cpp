@@ -2,9 +2,7 @@
 #include "PrivateMethodStudent.h"
 
 
-PrivateMethodStudent::PrivateMethodStudent()
-{
-}
+PrivateMethodStudent::PrivateMethodStudent(){}
 
 bool PrivateMethodStudent::CheckName(String^ st) {
 	int length = st->Length,

@@ -3,6 +3,7 @@
 #include "PrivateMethodGroups.h"
 
 using namespace System;
+using namespace System::IO;
 using namespace System::Collections;
 
 ref class Groups :  PrivateMethodGroups
@@ -10,7 +11,8 @@ ref class Groups :  PrivateMethodGroups
 public:
 	Groups();
 
-	void AddStudent();
+	bool AddStudent();
+	bool AddListStudents();
 	void RemoveStudent();
 	int GetCountStudent();
 	Object^ SearchStudentNum();

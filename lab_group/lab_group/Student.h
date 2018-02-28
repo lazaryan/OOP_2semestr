@@ -9,10 +9,12 @@ ref class Student : PrivateMethodStudent
 public:
 	Student();
 
-	void SetName();
+	//void SetName();
+	void SetName(String^);
 	String^ GetName();
 
-	void SetAge();
+	//void SetAge();
+	void SetAge(int);
 	int GetAge();
 private:
 	String^ Name;
