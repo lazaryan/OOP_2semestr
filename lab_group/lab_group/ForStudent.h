@@ -2,13 +2,14 @@
 
 using namespace System;
 
-ref class PrivateMethodStudent
+ref class ForStudent
 {
 public:
-	PrivateMethodStudent();
+	ForStudent();
 protected:
 	bool CheckName(String^);
+	
 	bool CheckAge(String^);
-	int AddNumber(String^);
+	int GetNumber(String^);
 };
 

@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{B9282791-E1ED-41EF-A52B-E08788FC8AE7}</ProjectGuid>
+    <ProjectGuid>{66C05508-AC40-4DB7-B62F-13F447E8E7B4}</ProjectGuid>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
     <RootNamespace>lab_group</RootNamespace>
@@ -140,10 +140,9 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Common.h" />
-    <ClInclude Include="Groups.h" />
-    <ClInclude Include="PrivateMethodGroups.h" />
-    <ClInclude Include="PrivateMethodStudent.h" />
+    <ClInclude Include="ForGroup.h" />
+    <ClInclude Include="ForStudent.h" />
+    <ClInclude Include="GroupStudents.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Student.h" />
@@ -153,11 +152,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
-    <ClCompile Include="Common.cpp" />
-    <ClCompile Include="Groups.cpp" />
+    <ClCompile Include="ForGroup.cpp" />
+    <ClCompile Include="ForStudent.cpp" />
+    <ClCompile Include="GroupStudents.cpp" />
     <ClCompile Include="lab_group.cpp" />
-    <ClCompile Include="PrivateMethodGroups.cpp" />
-    <ClCompile Include="PrivateMethodStudent.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

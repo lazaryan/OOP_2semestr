@@ -1,23 +1,21 @@
 #pragma once
-
-#include "PrivateMethodStudent.h"
+#include "ForStudent.h"
 
 using namespace System;
 
-ref class Student : PrivateMethodStudent
+ref class Student : ForStudent
 {
 public:
 	Student();
 
-	//void SetName();
-	void SetName(String^);
+	bool SetName(String^);
 	String^ GetName();
 
-	//void SetAge();
-	void SetAge(int);
+	bool SetAge(String^);
+	bool SetAge(int);
 	int GetAge();
 private:
-	String^ Name;
+	String ^ Name;
 	int Age;
 };
 
