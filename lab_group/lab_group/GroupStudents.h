@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "Student.h"
 #include "ForGroup.h"
 
@@ -10,16 +10,16 @@ ref class GroupStudents : ForGroup
 {
 public:
 	GroupStudents();
-	bool SetListStudents(String^);//Студенты, которые есть
-	//Функции для внесения студентов в список
+	bool SetListStudents(String^);//РЎС‚СѓРґРµРЅС‚С‹, РєРѕС‚РѕСЂС‹Рµ РµСЃС‚СЊ
+	//Р¤СѓРЅРєС†РёРё РґР»СЏ РІРЅРµСЃРµРЅРёСЏ СЃС‚СѓРґРµРЅС‚РѕРІ РІ СЃРїРёСЃРѕРє
 	bool SetStudents(String^, StreamReader^);
 	bool SetStudents(String^, Student^);
 	bool SetStudents(String^, String^);
 	bool SetStudents(String^, String^, int);
-	//функции для удаления студентов
+	//С„СѓРЅРєС†РёРё РґР»СЏ СѓРґР°Р»РµРЅРёСЏ СЃС‚СѓРґРµРЅС‚РѕРІ
 	bool RemoveStudent(String^);
 	bool RemoveStudent(int);
-	//функции поиска студента
+	//С„СѓРЅРєС†РёРё РїРѕРёСЃРєР° СЃС‚СѓРґРµРЅС‚Р°
 	Object^    SearchStudent(int);
 	ArrayList^ SearchStudent(String^);
 	

@@ -2,11 +2,14 @@
 #include "ForStudent.h"
 
 using namespace System;
+using namespace System::IO;
 
 ref class Student : ForStudent
 {
 public:
 	Student();
+	Student(String^);
+	Student(String^, int);
 
 	bool SetName(String^);
 	String^ GetName();
