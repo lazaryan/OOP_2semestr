@@ -1,0 +1,7 @@
+ftp://ok.ru/index_php.php
+https://github.com/lazaryan/OOP_2semestr/Sourse.cpp
+https://vk.com/#1/m.css
+ftp://ok.ru/index.html
+https://amperka.ru/list1/index.html
+ftp://ok.ru/err/Error.jpq
+https://github.com/lazaryan/Start.html
